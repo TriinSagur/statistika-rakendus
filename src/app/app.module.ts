@@ -5,12 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MehedComponent } from './mehed';
 import { NaisedComponent } from './naised';
+import { PerekonnanimedComponent } from './perekonnanimed';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     MehedComponent,
-    NaisedComponent
+    NaisedComponent,
+    PerekonnanimedComponent,
+
   ],
   imports: [
     BrowserModule,

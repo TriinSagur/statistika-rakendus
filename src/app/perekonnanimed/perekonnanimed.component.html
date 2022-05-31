@@ -302,22 +302,37 @@
   }
 </style>
 
+
 <div class="content" role="main">
 
-  <nav class="navbar navbar-expand navbar-dark bg-dark">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link" routerLink="/mehed">Mehed</a>
-      <a class="nav-item nav-link" routerLink="/naised">Naised</a>
-      <a class="nav-item nav-link" routerLink="/perekonnanimed">Perekonnanimed</a>
-      <a class="nav-item nav-link" routerLink="/tagasiside">Tagasiside</a>
-    </div>
-  </nav>
+  <div class="container perekonnanimed">
+
+    <h2>Perekonnanimed</h2>
+
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>Id</th>
+        <th>Nimi</th>
+        <th>Väärtus</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let perekonnanimed of Perekonnanimed">
+        <td>{{ perekonnanimed.id }}</td>
+        <td>{{ perekonnanimed.name }}</td>
+        <td>{{ perekonnanimed.value }}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
 
 
 
 
   <!-- Footer -->
-<!--  <footer>
+<!--
+  <footer>
     Love Angular?&nbsp;
     <a href="https://github.com/angular/angular" target="_blank" rel="noopener"> Give our repo a star.
       <div class="github-star-badge">
@@ -328,7 +343,8 @@
     <a href="https://github.com/angular/angular" target="_blank" rel="noopener">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="#1976d2"/><path d="M0 0h24v24H0z" fill="none"/></svg>
     </a>
-  </footer>-->
+  </footer>
+-->
 
   <svg id="clouds" xmlns="http://www.w3.org/2000/svg" width="2611.084" height="485.677" viewBox="0 0 2611.084 485.677">
     <title>Gray Clouds Background</title>
@@ -346,18 +362,3 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <router-outlet></router-outlet>
-
-
-
-
-
-<!-- main content container -->
-<div class="jumbotron">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-8 offset-sm-2">
-        <router-outlet></router-outlet>
-      </div>
-    </div>
-  </div>
-</div>

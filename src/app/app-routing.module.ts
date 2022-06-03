@@ -7,8 +7,6 @@ import {DynamicFormComponent} from "./tagasiside";
 
 
 
-
-
 const routes: Routes = [
   { path: 'mehed', component: MehedComponent },
   { path: 'naised', component: NaisedComponent },
@@ -16,12 +14,11 @@ const routes: Routes = [
   { path: 'tagasiside', component: DynamicFormComponent },
 
 
-
-
-
   // otherwise redirect to home
   { path: '**', redirectTo: '/mehed' }
 ];
+
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

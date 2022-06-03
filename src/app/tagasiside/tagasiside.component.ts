@@ -8,8 +8,7 @@ import { FormControl,
 
 @Component({
   selector: 'app-dynamic-form',
-  templateUrl: './tagasiside.component.html',
-  styleUrls: ['./tagasiside.component.css']
+  templateUrl: './tagasiside.component.html'
 })
 export class DynamicFormComponent implements OnInit {
 
